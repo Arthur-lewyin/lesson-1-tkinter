@@ -5,10 +5,12 @@ root =Tk()
 root.geometry("400x400")
 
 def cal():
-    new_root= Tk()
+     new_root= Tk()
     new_root.geometry("600x600")
     new_root.title("calender")
-    fetch_year = int(e.get())
+    new_root.config(background="white")
+    
+    fetch_year = int(e1.get())
     cal_content = calendar.calendar(fetch_year)
 
     cal_label = Label(new_root, text = cal_content ,font = "Consolas 10 bold")
